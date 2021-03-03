@@ -1,0 +1,27 @@
+.places {
+    padding: 0px 148px 92px;
+    background-color: #25282b;
+    max-width: 1280px;
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 1280px) {
+    .places {
+        padding: 0px calc((100vw - 1024px)*(148 - 48)/(1280 - 1024) + 48px) 92px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .places {
+        padding: 0px calc((100vw - 768px)*(48 - 24)/(1024 - 768) + 24px) calc((100vw - 768px)*(92 - 88)/(1024 - 768) + 88px);
+    }
+}
+@media all and (max-width: 768px) {
+    .places {
+        padding: 0px calc((100vw - 320px)*(24 - 0)/(768 - 320)) calc((100% - 320px)*(88 - 64)/(768 - 320) + 64px);
+    }
+}
+@media all and (max-width: 320px) {
+    .places {
+        padding: 0px 0px 64px;
+    }
+}

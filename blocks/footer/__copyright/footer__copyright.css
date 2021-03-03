@@ -1,0 +1,11 @@
+.footer__copyright {
+    margin: 16px 0px 0px 0px;
+    color: white;
+    font-size: 14px;
+     line-height: 18px; /*Тут высота строки в px, т.к она, при меняющимся размере шрифта, 18px для всех разрешений*/
+}
+@media all and (min-width:768px) {
+    .footer__copyright {
+        margin: 0px;
+    }
+}

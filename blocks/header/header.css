@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 48px 48px;
+}
+@media all and (max-width: 1024px) {
+    .header {
+        padding: 28px calc((100vw - 768px)*(48 - 24)/(1024 - 768) + 24px) 48px;
+    }
+}
+@media all and (max-width: 768px) {
+    .header {
+        padding: calc((100vw - 320px)*(28 - 16)/(768 - 320) + 16px) calc((100vw - 320px)*(24 - 16)/(768 - 320) + 16px) 48px;
+    }
+}
+@media all and (max-width: 320px) {
+    .header {
+        padding: 16px 16px 48px;
+    }
+}

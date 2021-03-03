@@ -1,0 +1,26 @@
+.lead__subtitle {
+    margin: 0px 0px 56px;
+    justify-self: center;
+    align-self: center;
+    max-width: 640px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+@media all and (max-width: 768px) {
+    .lead__subtitle {
+        margin: 0px 0px calc((100vw - 320px)*(64 - 16)/(768 - 320) + 16px);
+        max-width: calc((100vw - 320px)*(640 - 288)/(768 - 320) + 288px);
+        font-size: calc((100vw - 320px)*(30 - 16)/(768 - 320) + 16px);
+    }
+}
+@media all and (max-width: 320px) {
+    .lead__subtitle {
+        margin: 0px 0px 40px;
+        max-width: 288px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}

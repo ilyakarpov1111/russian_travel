@@ -1,0 +1,29 @@
+.place {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:48px 40px;
+    padding: 0px 0px 80px;
+}
+.place:last-of-type {
+    padding: 0px;
+}
+@media all and (max-width: 1280px) {
+    .place {
+        gap:48px calc((100vw - 1024px)*(48 - 32)/(1280 - 1024) + 32px);
+    }
+}
+@media all and (max-width: 1024px) {
+    .place {
+        gap:48px calc((100vw - 768px)*(32 - 28)/(1024 - 768) + 28px);
+    }
+}
+@media all and (max-width: 768px) {
+    .place {
+        gap:calc((100vw - 320px)*(48 - 32)/(768 - 320) + 32px) calc((100vw - 320px)*(28 - 8)/(768 - 320));
+    }
+}
+@media all and (max-width: 320px) {
+    .place {
+        gap:32px 0px;
+    }
+}
