@@ -1,3 +1,14 @@
 .place__textarea {
     margin: 0px;
 }
+
+@media all and (max-width: 768px) {
+    .place__textarea {
+        padding: 0px calc((100vw - 320px)*(0 + 16)/(768 - 320)) 0px;
+    }
+}
+@media all and (max-width: 320px) {
+    .place__textarea {
+        padding: 0px 16px 0px;
+    }
+}
